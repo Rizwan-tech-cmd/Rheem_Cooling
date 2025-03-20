@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rheem Cooling</title>
+  <link rel="icon" href="Icon-Logo.png">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap.min.css" />
+  <script src="bootstrap-5.3.3-dist/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid sticky-top" id="container1">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg offset-xlg-1">
+          <a href="index.html" class="navbar-brand" id="brand"><img src="Icon-Logo.png" alt="" />Rheem Cooling</a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon bg-light"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ps-3" id="ul">
+              <li class="nav-item dropdown ps-3">
+                <a href="index.html" class="nav-link" id="anchor">Home</a>
+              </li>
+              <li class="nav-item dropdown ps-3">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="anchor">Product's</a>
+                <ul class="dropdown-menu bg-lightc">
+                  <a href="#window_ac" class="dropdown-item">Window AC</a>
+                  <a href="#splite_ac" class="dropdown-item">Split AC</a>
+                  <a href="#cassette_ac" class="dropdown-item">Cassette AC</a>
+                </ul>
+              </li>
+              <li class="nav-item dropdown ps-3">
+                <a href="#gallery" class="nav-link" id="anchor">Gallery</a>
+              </li>
+              <li class="nav-item ps-3">
+                <a href="#services" class="nav-link" id="anchor">Services</a>
+              </li>
+              <li class="nav-item ps-3">
+                <a href="#abouts" class="nav-link" id="anchor">About us</a>
+              </li>
+              <li class="nav-item ps-3">
+                <a href="#contact" class="nav-link" id="anchor">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sliders-Section -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.jpg.jpg" class="d-block w-100 custom-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Split AC</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/2.jpg.jpg" class="d-block w-100 custom-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Cassette AC</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.jpg.jpeg" class="d-block w-100 custom-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Window AC</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- ///catagrees/// -->
+  <div class="item2"><!-- CARDS -->
+
+    <!-- Categories Section -->
+
+    <div class="main">
+      <h1>CATEGORIES</h1>
+      <ul class="cards">
+        <!-- Split AC Card -->
+
+        <li class="cards_item">
+          <div class="card" onclick="openPopup('split-ac')">
+            <div class="card_image">
+              <img src="images/image_html_2.jpeg" alt="Split AC">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">SPLIT AC</h2>
+              <p class="card_text">Beat the heat with a Split AC that cools fast, saves energy, and fits perfectly in
+                any room.</p>
+              <!-- Star Rating -->
+              <div class="star-rating" data-rating="4.5">
+
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div>
+              <!-- Price -->
+              <p class="price">From 85,000 PKR</p>
+              <!-- Read More Button -->
+              <button class="btn card_btn">SHOP NOW</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Window AC Card -->
+        <li class="cards_item">
+          <div class="card" onclick="openPopup('window-ac')">
+            <div class="card_image">
+              <img src="images/image_html_3.jpeg" alt="Window AC">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">WINDOW AC</h2>
+              <p class="card_text">Enjoy cool air, simple controls, and energy-efficient performance with a Window AC.
+              </p>
+              <!-- Star Rating -->
+              <div class="star-rating" data-rating="4.5">
+
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div>
+              <!-- Price -->
+              <p class="price">From 120,000 PKR</p>
+              <!-- Read More Button -->
+              <button class="btn card_btn">SHOP NOW</button>
+            </div>
+          </div>
+        </li>
+
+        <!-- Cassette AC Card -->
+        <li class="cards_item">
+          <div class="card" onclick="openPopup('cassette-ac')">
+            <div class="card_image">
+              <img src="images/cassette_ac_1.jpeg" alt="Cassette AC">
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">CASSETTE AC</h2>
+              <p class="card_text">Experience uniform cooling and a clutter-free look with a ceiling-mounted Cassette
+                AC.</p>
+              <!-- Star Rating -->
+              <div class="star-rating" data-rating="4.5">
+
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+                <span>★</span>
+              </div>
+              <!-- Price -->
+              <p class="price">From 90,000 PKR</p>
+              <!-- Read More Button -->
+              <button class="btn card_btn">SHOP NOW</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Popup Windows -->
+    <div" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup('split-ac')">&times;</span>
+        <img src="images/image_html_2.jpeg" alt="Split AC">
+        <h2>SPLIT AC</h2>
+        <p>Beat the heat with a Split AC that cools fast, saves energy, and fits perfectly in any room.</p>
+        <p class="price">From 85,000 PKR</p>
+        <button class="btn card_btn">SHOP NOW</button>
+      </div>
+  </div>
+
+  <div id="window-ac" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('window-ac')">&times;</span>
+      <img src="images/image_html_3.jpeg" alt="Window AC">
+      <h2 id="window-ac">WINDOW AC</h2>
+      <p>Enjoy cool air, simple controls, and energy-efficient performance with a Window AC.</p>
+      <p class="price">From 120,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <div id="cassette-ac" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('cassette-ac')">&times;</span>
+      <img src="images/image_html_1.jpeg" alt="Cassette AC">
+      <h2>CASSETTE AC</h2>
+      <p>Experience uniform cooling and a clutter-free look with a ceiling-mounted Cassette AC.</p>
+      <p class="price">From 90,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Single Product Card -->
+
+
+  <!-- Popup Window for Product 1 -->
+  <div id="product1" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('product1')">&times;</span>
+      <img src="images/split-ac-large.jpg" alt="Split AC">
+      <h2>SPLIT AC</h2>
+      <p>Beat the heat with a Split AC that cools fast, saves energy, and fits perfectly in any room.</p>
+      <p class="price">From 1,50,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+
+  <!-- Collection Section -->
+
+  <div class="main">
+    <h1>COLLECTION</h1>
+    <h2>TOP SELLING ACs</h2>
+    <ul class="cards">
+      <!-- Gree AC Card -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('gree-ac')">
+          <div class="card_image">
+            <img src="images/gree_1.jpeg" alt="Gree AC">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Gree Pular Series DC Inverter AC</h2>
+            <p class="card_text">The Gree Pular Series offers energy-efficient cooling with features like 4-way air
+              flow, auto clean function, and low voltage startup.</p>
+
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 85,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+
+      <!-- Haier AC Card -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('haier-ac')">
+          <div class="card_image">
+            <img src="images/haier_2.jpeg" alt="Haier AC">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Haier Puri Inverter 1.5 Ton Powerful AC</h2>
+            <p class="card_text">This model from Haier combines air purification with cooling, featuring a Super IFD
+              filter and self-cleaning function.</p>
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 60,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+
+      <!-- Kenwood AC Card -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('kenwood-ac')">
+          <div class="card_image">
+            <img src="images/kenwood_3.jpeg" alt="Kenwood AC">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Kenwood eSmart Plus 1.5 Ton Inverter AC</h2>
+            <p class="card_text">Kenwood's eSmart Plus series provides up to 75% energy efficiency with 5D inverter
+              technology.</p>
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 100,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Popup Windows for Collection Cards -->
+  <div id="gree-ac" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('gree-ac')">&times;</span>
+      <img src="images/gree_1.jpeg" alt="Gree AC">
+      <h2>Gree Pular Series DC Inverter AC</h2>
+      <p>The Gree Pular Series offers energy-efficient cooling with features like 4-way air flow, auto clean function,
+        and low voltage startup.</p>
+      <p class="price">From 85,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <div id="haier-ac" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('haier-ac')">&times;</span>
+      <img src="images/haier_2.jpeg" alt="Haier AC">
+      <h2>Haier Puri Inverter 1.5 Ton Powerful AC</h2>
+      <p>This model from Haier combines air purification with cooling, featuring a Super IFD filter and self-cleaning
+        function.</p>
+      <p class="price">60,000</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <div id="kenwood-ac" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('kenwood-ac')">&times;</span>
+      <img src="images/kenwood_3.jpeg" alt="Kenwood AC">
+      <h2>Kenwood eSmart Plus 1.5 Ton Inverter AC</h2>
+      <p>Kenwood's eSmart Plus series provides up to 75% energy efficiency with 5D inverter technology.</p>
+      <p class="price">From 100,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- window ac section -->
+  <div class="main" id="window-ac">
+    <h1 id="window_ac">WINDOW ACs</h1>
+    <ul class="cards">
+      <!-- Window AC 1 -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('window-ac-1')">
+          <div class="card_image">
+            <img src="images/window_ac_1.jpeg" alt="Window AC 1">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">CoolAir 1.5 Ton Window AC</h2>
+            <p class="card_text">Fast cooling, low noise, energy-efficient. Perfect for homes & offices.</p>
+
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 100,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+
+      <!-- Window AC 2 -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('window-ac-2')">
+          <div class="card_image">
+            <img src="images/window_ac_2.jpeg" alt="Window AC 2">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">ArcticAir 2.0 Ton Window AC</h2>
+            <p class="card_text">Powerful turbo cooling, 4-way airflow, low power consumption. Ideal for large rooms.
+            </p>
+
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 85,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+
+      <!-- Window AC 3 -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('window-ac-3')">
+          <div class="card_image">
+            <img src="images/window_ac_3.jpeg" alt="Window AC 3">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">FrostBite 1.0 Ton Window AC</h2>
+            <p class="card_text">Compact, energy-efficient design, ideal for small spaces and stylish living.</p>
+
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 55,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Split ACs Section -->
+  <div class="main" id="splite_ac">
+    <h1 id="split_ac">SPLIT ACs</h1>
+    <ul class="cards">
+      <!-- Split AC 1 -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('split-ac-1')">
+          <div class="card_image">
+            <img src="images/split_ac_1.jpeg" alt="Split AC 1">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">CoolMaster 1.5 Ton Split AC</h2>
+            <p class="card_text">Energy-efficient, fast cooling, and whisper-quiet operation.</p>
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 130,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+
+      <!-- Split AC 2 -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('split-ac-2')">
+          <div class="card_image">
+            <img src="images/split_ac_2.jpeg" alt="Split AC 2">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">ArcticPro 2.0 Ton Split AC</h2>
+            <p class="card_text">High cooling capacity, eco-friendly, and Wi-Fi enabled.</p>
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 185,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+
+      <!-- Split AC 3 -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('split-ac-3')">
+          <div class="card_image">
+            <img src="images/split_ac_3.jpeg" alt="Split AC 3">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">FrostLine 1.0 Ton Split AC</h2>
+            <p class="card_text">Compact design, ideal for small spaces, and energy-efficient.</p>
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 85,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Cassette ACs Section -->
+  <div class="main">
+    <h1 id="cassette_ac">CASSETTE ACs</h1>
+    <ul class="cards">
+      <!-- Cassette AC 1 -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('cassette-ac-1')">
+          <div class="card_image">
+            <img src="images/cassette_ac_1.jpeg" alt="Cassette AC 1">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">CoolFlow 2.0 Ton Cassette AC</h2>
+            <p class="card_text">Uniform cooling, sleek design, and perfect for large spaces.</p>
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 100,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+
+      <!-- Cassette AC 2 -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('cassette-ac-2')">
+          <div class="card_image">
+            <img src="images/cassette_ac_2.jpeg" alt="Cassette AC 2">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">Wave 1.5 Ton Cassette AC</h2>
+            <p class="card_text">Energy-efficient, 4-way airflow, and easy maintenance.</p>
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 85,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+
+      <!-- Cassette AC 3 -->
+      <li class="cards_item">
+        <div class="card" onclick="openPopup('cassette-ac-3')">
+          <div class="card_image">
+            <img src="images/cassette_ac_3.jpeg" alt="Cassette AC 3">
+          </div>
+          <div class="card_content">
+            <h2 class="card_title">FrostBite 2.5 Ton Cassette AC</h2>
+            <p class="card_text">High cooling capacity, eco-friendly, and Wi-Fi enabled.</p>
+            <!-- Star Rating -->
+            <div class="star-rating" data-rating="4.5">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <!-- Price -->
+            <p class="price">From 60,000 PKR</p>
+            <!-- Read More Button -->
+            <button class="btn card_btn">MORE DETAILS</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Popup Windows -->
+  <!-- Gree AC Popup -->
+  <div id="gree-ac" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('gree-ac')">&times;</span>
+      <img src="images/gree_1.jpeg" alt="Gree AC">
+      <h2>Gree Pular Series DC Inverter AC</h2>
+      <p>The Gree Pular Series offers energy-efficient cooling with features like 4-way air flow, auto clean function,
+        and low voltage startup.</p>
+      <p class="price">From 85,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Haier AC Popup -->
+  <div id="haier-ac" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('haier-ac')">&times;</span>
+      <img src="images/haier_2.jpeg" alt="Haier AC">
+      <h2>Haier Puri Inverter 1.5 Ton AC</h2>
+      <p>This model from Haier combines air purification with cooling, featuring a Super IFD filter and self-cleaning
+        function.</p>
+      <p class="price">From 60,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Kenwood AC Popup -->
+  <div id="kenwood-ac" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('kenwood-ac')">&times;</span>
+      <img src="images/kenwood_3.jpeg" alt="Kenwood AC">
+      <h2>Kenwood eSmart Plus 1.5 Ton Inverter AC</h2>
+      <p>Kenwood's eSmart Plus series provides up to 75% energy efficiency with 5D inverter technology.</p>
+      <p class="price">From 100,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Window AC 1 Popup -->
+  <div id="window-ac-1" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('window-ac-1')">&times;</span>
+      <img src="images/window_ac_1.jpeg" alt="Window AC 1">
+      <h2>CoolAir 1.5 Ton Window AC</h2>
+      <p>Fast cooling, low noise, energy-efficient. Perfect for homes & offices.</p>
+      <p class="price">From 100,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Window AC 2 Popup -->
+  <div id="window-ac-2" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('window-ac-2')">&times;</span>
+      <img src="images/window_ac_2.jpeg" alt="Window AC 2">
+      <h2>ArcticAir 2.0 Ton Window AC</h2>
+      <p>Powerful turbo cooling, 4-way airflow, low power consumption. Ideal for large rooms.</p>
+      <p class="price">From 85,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Window AC 3 Popup -->
+  <div id="window-ac-3" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('window-ac-3')">&times;</span>
+      <img src="images/window_ac_3.jpeg" alt="Window AC 3">
+      <h2>FrostBite 1.0 Ton Window AC</h2>
+      <p>Compact, energy-efficient design, ideal for small spaces and stylish living.</p>
+      <p class="price">From 55,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Split AC 1 Popup -->
+  <div id="split-ac-1" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('split-ac-1')">&times;</span>
+      <img src="images/split_ac_1.jpeg" alt="Split AC 1">
+      <h2>CoolMaster 1.5 Ton Split AC</h2>
+      <p>Energy-efficient, fast cooling, and whisper-quiet operation.</p>
+      <p class="price">From 130,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Split AC 2 Popup -->
+  <div id="split-ac-2" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('split-ac-2')">&times;</span>
+      <img src="images/split_ac_2.jpeg" alt="Split AC 1">
+      <h2>CoolMaster 1.5 Ton Split AC</h2>
+      <p>Energy-efficient, fast cooling, and whisper-quiet operation.</p>
+      <p class="price">From 185,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Split AC 3 Popup -->
+
+
+  <div id="split-ac-3" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('split-ac-3')">&times;</span>
+      <img src="images/split_ac_3.jpeg" alt="Split AC 3">
+      <h2>FrostLine 1.0 Ton Split AC</h2>
+      <p>Compact design, ideal for small spaces, and energy-efficient.</p>
+      <p class="price">From 85,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+
+  <!-- Cassette AC 1 Popup -->
+  <div id="cassette-ac-1" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('cassette-ac-1')">&times;</span>
+      <img src="images/cassette_ac_1.jpeg" alt="Cassette AC 1">
+      <h2>CoolFlow 2.0 Ton Cassette AC</h2>
+      <p>Uniform cooling, sleek design, and perfect for large spaces.</p>
+      <p class="price">From 100,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Cassette AC 2 Popup -->
+  <div id="cassette-ac-2" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('cassette-ac-2')">&times;</span>
+      <img src="images/cassette_ac_2.jpeg" alt="Cassette AC 2">
+      <h2>Wave 1.5 Ton Cassette AC</h2>
+      <p>Energy-efficient, 4-way airflow, and easy maintenance.</p>
+      <p class="price">From 85,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- Cassette AC 3 Popup -->
+  <div id="cassette-ac-3" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('cassette-ac-3')">&times;</span>
+      <img src="images/cassette_ac_3.jpeg" alt="Cassette AC 3">
+      <h2>FrostBite 2.5 Ton Cassette AC</h2>
+      <p>High cooling capacity, eco-friendly, and Wi-Fi enabled.</p>
+      <p class="price">From 60,000 PKR</p>
+      <button class="btn card_btn">SHOP NOW</button>
+    </div>
+  </div>
+
+  <!-- //gallery// -->
+  <div class="wrapper" id="gallery">
+    <h1>Gallery</h1>
+    <div class="gallery">
+      <div class="gallery-image"><span><img src="images/g1.jpg.jpg" alt=""></span></div>
+      <div class="gallery-image"><span><img src="images/g2.jpg.jpg" alt=""></span></div>
+      <div class="gallery-image"><span><img src="images/g3.jpg.jpg" alt=""></span></div>
+      <div class="gallery-image"><span><img src="images/g4.jpg.jpg" alt=""></span></div>
+      <div class="gallery-image"><span><img src="images/g5.jpg.jpg" alt=""></span></div>
+      <div class="gallery-image"><span><img src="images/g6.jpg.jpg" alt=""></span></div>
+    </div>
+  </div>
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+      <span class="icon fas fa-times"></span>
+    </div>
+    <div class="image-box">
+      <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+      <div class="slide next"><i class="fas fa-angle-right"></i></div>
+      <img src="" alt="">
+    </div>
+  </div>
+  <div class="shadow"></div>
+  <!-- //service// -->
+
+  <div class="services-main" id="services">
+    <h1>Shipping and Other Information</h1>
+    <div class="services-row">
+      <div class="row-box1">
+        <div class="services-text">
+          <i class="ri-home-office-line"></i>
+          <h2>Home services</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-text">
+          <i class="ri-loop-left-line"></i>
+          <h2>Easy Returns</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-text">
+          <i class="ri-wechat-line"></i>
+          <h2>24/7 Suppor</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+      </div>
+      <div class="row-box2">
+        <div class="services-text">
+          <i class="ri-box-3-line"></i>
+          <h2>Free shipping</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-text">
+          <i class="ri-phone-line"></i>
+          <h2>Customer service</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="services-text">
+          <i class="ri-git-repository-private-line"></i>
+          <h2>Secure payment</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ///About us/// -->
+
+  <div class="content-us" id="abouts">
+    <div class="header-part">
+      <h1>About Us</h1>
+      <p>Welcome to Rheem Cooling - Your Trusted Air Conditioning Solution</p>
+    </div>
+
+
+    <div class="center-part">
+      <div class="content-img">
+        <img src="images/rheem.jpg" alt="">
+      </div>
+      <div class="content-text">
+        <h1>Who We Are</h1>
+
+        <p>Rheem Cooling was founded with a vision to revolutionize air
+          conditioning technology. We bring cutting-edge cooling solutions
+          to homes and businesses, ensuring energy efficiency, durability,
+          and superior performance.
+          and efficiency. Our team is dedicated to delivering quality,
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, voluptatibus quae
+          Our commitment to quality and customer satisfaction has made us
+          a trusted name in the industry.</p>
+        <p>At Rheem Cooling, we specialize in providing top-notch air conditioning solutions that ensure comfort
+          and efficiency. Our team is dedicated to delivering quality, innovation, and reliability.</p>
+      </div>
+    </div>
+    <div class="last-part">
+      <div class="header-part2">
+        <p>Rheem Cooling was founded with a vision to revolutionize air conditioning
+          technology. We bring cutting-edge cooling businesses <br>
+          and customer satisfaction has made us a trusted name in the industry.</p>
+        <h1>Meet Our Team</h1>
+      </div>
+      <section class="team">
+        <div class="team-members">
+          <div class="member">
+            <img src="images/maria_1.jpg" alt="Maria Talib">
+            <h3>Maria Talib</h3>
+            <p>Co-Founder & Product Manager</p>
+          </div>
+          <div class="member">
+            <img src="images/bushra_2.jpg" alt="Bushra Zeb">
+            <h3>Bushra Zeb</h3>
+            <p>Marketing Head</p>
+          </div>
+          <div class="member">
+            <img src="images/qasim-3.jpg" alt="Gulam Qasim Ali">
+            <h3>Gulam Qasim Ali</h3>
+            <p>Operations Manager</p>
+          </div>
+          <div class="member">
+            <img src="images/hamid_4.jpg" alt="Hamid Ali">
+            <h3>Hamid Ali</h3>
+            <p>Technical Lead</p>
+          </div>
+        </div>
+      </section>
+      <footer class="team-last-tax">
+        <p>&copy; 2025 Rheem Cooling. All rights reserved.</p>
+      </footer>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <!-- ///Contact/// -->
+  <section class="contact" id="contact">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Magnam voluptatibus iste odit esse doloribus aperiam, voluptate
+        animi pariatur numquam ea, ullam quis fuga. Officia atque
+        Magnam voluptate laudantium numquam quidem? </p>
+    </div>
+    <div class="contact_container">
+      <div class="contactTnfo">
+        <div class="box">
+          <div class="ican"><i style="color: aliceblue; font-size: 35px;" class="ri-map-pin-user-fill"></i></div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>4671 Suger Camp Road,<br>Owatona,<br>55060</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="ican"><i style="color: aliceblue; font-size: 35px;" class="ri-phone-fill"></i></div>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>03083137030</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="ican"><i style="color: aliceblue; font-size: 35px;" class="ri-mail-line"></i></div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>ghulamqasimali786110 <br> @gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contactTnform">
+        <form>
+          <h2>Send Message</h2>
+          <div class="inputbox">
+            <input type="text" name="" required="required">
+            <span>Full Name</span>
+          </div>
+          <div class="inputbox">
+            <input type="text" name="" required="required">
+            <span>Email</span>
+          </div>
+          <div class="inputbox">
+            <textarea required="required"></textarea>
+            <span>Type Your Message...</span>
+          </div>
+          <div class="inputbox">
+            <input type="submit" name="" value="Send">
+          </div>
+        </form>
+      </div><br>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d33822.95625101513!2d67.35272!3d24.869035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb333177263e88f%3A0x52d982f28576e909!2sGulshan%20e%20Hadeed%20Phase%201%20Bin%20Qasim%20Town%2C%20Karachi%2C%20Pakistan!5e1!3m2!1sen!2sus!4v1740944458325!5m2!1sen!2sus"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- ///footer/// -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#abouts">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Payment Options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Online Shop</h4>
+          <ul>
+            <li><a href="#split_ac">Split AC</a></li>
+            <li><a href="#window_ac">Window AC</a></li>
+            <li><a href="#cassette_ac">Cassate AC</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="footer__discover">
+              <img src="images/google play.png.jpg" alt="Google Play" />
+              <img src="images/app story.png.jpg" alt="App Store" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="main.js"></script>
+
+</html>
